@@ -1,0 +1,105 @@
+/* styles.css */
+body {
+    background-color: #ffffff; /* 전체 배경색 변경 (밝은 하늘색) */
+    font-family: Arial, sans-serif; /* 글꼴 설정 */
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #000000; /* 제목 글씨 색상 */
+    text-align: center; /* 제목 가운데 정렬 */
+    padding: 30px;
+}
+
+/* styles.css의 마지막에 추가 */
+.section h2 {
+    color: #333;
+    font-family: 'Roboto', sans-serif; /* Google Fonts 적용 */
+    margin-bottom: 18px;
+}
+/*최상단 박스 본문 글자크기 수정*/
+p {
+    color: #000000; /* 본문 글씨 색상 */
+    font-size: 23px; /* 글씨 크기 */
+    text-align: center; /* 본문 가운데 정렬 */
+}
+
+/* div 태그에 .box 클래스를 적용하여 스타일링 */
+div.box {
+    max-width: 800px; /* 박스의 최대 너비를 800px로 설정 */
+    width: 80%; /* 화면 크기가 줄어들 때 박스 너비를 80%로 설정 */
+    margin: 30px auto; /* 박스를 가운데 정렬 */
+    padding: 30px; /* 박스 내부 여백 */
+    border: 3px solid #222; /* 테두리 색상과 두께 */
+    box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.2); /* 그림자 효과 */
+    background-color: #f7f7f7; /* 박스 배경색 */
+    text-align: center; /* 박스 내부 내용 가운데 정렬 */
+    border-radius: 10px; /* 모서리를 둥글게 */
+}
+
+
+/* 네비게이션 바 스타일 */
+.navbar {
+    background-color: #333; /* 네비게이션 바 배경색 */
+    overflow: hidden; /* 내용물이 넘치지 않도록 */
+    text-align: center; /* 네비게이션 항목 가운데 정렬 */
+    padding: 10px 0; /* 네비게이션 바 패딩 */
+}
+
+.navbar a {
+    display: inline-block;
+    color: #fff;
+    padding: 15px 30px; /* 링크의 상하좌우 패딩 증가 */
+    text-decoration: none;
+    font-size: 20px; /* 글자 크기 조금 증가 */
+    margin: 0 10px; /* 링크 간격 증가 */
+    border-radius: 5px; /* 링크 모서리 둥글게 */
+    transition: background-color 0.3s; /* 배경색 전환 애니메이션 추가 */
+    
+}
+
+.navbar a:hover {
+    background-color: #5ce06d; /* 마우스를 올렸을 때 색상 변경 */
+}
+
+/* 섹션 스타일 수정 */
+.section {
+    max-width: 1000px; /* 섹션의 최대 너비를 1000px로 제한 */
+    width: 90%; /* 화면 크기가 줄어들 때 너비를 90%로 설정 */
+    padding: 50px 20px;
+    background-color: #ffffff; /* 배경색 */
+    margin: 20px auto; /* 섹션을 가운데 정렬하고 위아래 간격 설정 */
+    border-radius: 10px; /* 섹션의 모서리를 둥글게 */
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.1); /* 섹션에 그림자 효과 추가 */
+}
+
+/* 짝수번째 섹션 배경색 */
+.section:nth-child(even) {
+    background-color: #ffffff; /* 연한 회색 */
+}
+
+/* 첫 번째, 두 번째 섹션의 배경색 */
+.section:nth-child(odd) {
+    background-color: #ffffff; /* 밝은 하늘색 */
+}
+
+/*홈,소개,연락처 섹션 타이틀, 본문 글자 수정*/
+/* 섹션 안의 텍스트 중앙 정렬 및 간격 조정 */
+.section h2 {
+    text-align: center; /* 가운데 정렬 */
+    font-size: 26px; /* 글자 크기 조정 */
+    margin-bottom: 15px; /* 제목과 본문 간의 간격 */
+}
+
+.section p {
+    text-align: center; /* 본문도 가운데 정렬 */
+    font-size: 19px; /* 글자 크기 조정 */
+    line-height: 1.5; /* 행 간격 조정 */
+    margin: 0 auto; /* 가운데 정렬 */
+    width: 80%; /* 본문의 최대 너비를 설정 */
+}
+
+html {
+    scroll-behavior: smooth; /* 전체 페이지에 부드러운 스크롤 효과 추가 */
+}
